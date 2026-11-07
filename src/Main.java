@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -35,6 +36,8 @@ public class Main {
                 System.out.println("Cuánts cops vols atacar?");
                 int atacar = sc.nextInt();
                 mascota.atacar(atacar, dummy);
+            } else if (opcio == 6) { // INVOCACIÓN DE LA NUEVA FUNCIÓN
+                mascota.bailar();
             } else if (opcio == 0) {
                 System.out.println("Sortint de l'aplicació...");
             } else {
@@ -55,6 +58,7 @@ public class Main {
         System.out.println(" 3.Menjar");
         System.out.println(" 4.Dutxar");
         System.out.println(" 5.Atacar");
+        System.out.println(" 6.Bailar mambo 💃🕺");
         System.out.println(" 0.Sortir");
     }
 }

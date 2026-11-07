@@ -56,6 +56,11 @@ public class Mascota {
             anim += 5;
         }
     }
+    public void bailar() {
+        System.out.println(this.nom + " está bailando un mambo! 💃🕺");
+        this.energia -= 10;
+    }
+
     public void energia(int energia) {
         this.energia = energia;
     }
